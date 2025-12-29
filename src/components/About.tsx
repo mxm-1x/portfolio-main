@@ -1,11 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface AboutProps {
-    setActiveTab: (tab: 'about' | 'projects') => void;
-}
-
-const About: React.FC<AboutProps> = ({ setActiveTab }) => {
+const About: React.FC = () => {
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {

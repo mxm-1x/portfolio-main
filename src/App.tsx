@@ -32,7 +32,7 @@ function App() {
               transition={{ duration: 0.3 }}
               className="flex-grow"
             >
-              <About setActiveTab={setActiveTab} />
+              <About />
             </motion.div>
           ) : (
             <motion.div

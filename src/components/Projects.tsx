@@ -69,6 +69,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
             }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
+            onClick={() => setIsHovered(!isHovered)}
             className="group relative h-[450px] rounded-3xl overflow-hidden cursor-pointer"
         >
             {/* Inner Card (Sticker Area) */}
@@ -149,8 +150,8 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
                         </div>
 
                         <div className="pt-2 flex gap-4">
-                            <a href={project.link} className="text-sm font-medium text-white border-b border-white pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">Live Demo</a>
-                            <a href={project.github} className="text-sm font-medium text-gray-400 border-b border-gray-400 pb-1 hover:text-white hover:border-white transition-colors">GitHub</a>
+                            <a href={project.link} onClick={(e) => e.stopPropagation()} className="text-sm font-medium text-white border-b border-white pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">Live Demo</a>
+                            <a href={project.github} onClick={(e) => e.stopPropagation()} className="text-sm font-medium text-gray-400 border-b border-gray-400 pb-1 hover:text-white hover:border-white transition-colors">GitHub</a>
                         </div>
                     </motion.div>
                 </motion.div>

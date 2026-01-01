@@ -8,11 +8,11 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
     return (
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
-            <div className="flex items-center gap-2 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+        <div className="fixed bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-50 w-full max-w-fit px-4 md:px-0">
+            <div className="flex items-center gap-1 md:gap-2 p-1.5 md:p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
                 <button
                     onClick={() => setActiveTab('about')}
-                    className={`relative px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${activeTab === 'about' ? 'text-white' : 'text-gray-500 hover:text-gray-700'
+                    className={`relative px-5 md:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${activeTab === 'about' ? 'text-white' : 'text-gray-500 hover:text-gray-700'
                         }`}
                 >
                     {activeTab === 'about' && (
@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
                 <button
                     onClick={() => setActiveTab('projects')}
-                    className={`relative px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${activeTab === 'projects' ? 'text-white' : 'text-gray-500 hover:text-gray-700'
+                    className={`relative px-5 md:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${activeTab === 'projects' ? 'text-white' : 'text-gray-500 hover:text-gray-700'
                         }`}
                 >
                     {activeTab === 'projects' && (

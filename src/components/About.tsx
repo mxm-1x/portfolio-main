@@ -34,7 +34,7 @@ const About: React.FC = () => {
             {/* Header / Name Section */}
             <motion.div variants={itemVariants} className="mb-12 text-right">
                 <p className="text-lg text-gray-500 font-mono mb-2">Full-Stack Engineer | SaaS & AI Builder</p>
-                <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-gray-900 tracking-tighter font-syne uppercase leading-[0.9]">
+                <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold text-gray-900 tracking-tighter font-syne uppercase leading-[0.9]">
                     Malhar<br />
                     <span className="italic font-light">Mahanwar</span>
                 </h1>
